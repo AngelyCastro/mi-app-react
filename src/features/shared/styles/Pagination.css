@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 0;
+}
+
+/* Botones de página (para cuando se agreguen) */
+.pagination button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #14213d;
+  font-family: "Poppins", Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.pagination button:hover {
+  background-color: #14213d;
+  color: #ffffff;
+}

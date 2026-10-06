@@ -1,8 +1,8 @@
-
+import "../styles/SearchBar.css"
 
 const SearchBar = () => {
   return (
-    <div>SearchBar</div>
+    <div className="search-bar">SearchBar</div>
   )
 }
 

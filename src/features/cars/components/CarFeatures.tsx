@@ -1,6 +1,10 @@
+import "../styles/CarFeatures.css"
+
 const CarFeatures = () => {
   return (
-    <div>CarFeatures</div>
+    <div className="car-features">
+
+    </div>
   )
 }
 

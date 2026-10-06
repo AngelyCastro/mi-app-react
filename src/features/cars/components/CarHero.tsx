@@ -1,6 +1,8 @@
+import "../styles/CarHero.css"
+
 const CarHero = () => {
   return (
-    <div>CarHero</div>
+    <div className="car-hero">CarHero</div>
   )
 }
 

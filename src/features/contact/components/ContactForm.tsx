@@ -1,7 +1,8 @@
+import "../styles/ContactForm.css"
 
 const ContactForm = () => {
   return (
-    <div>ContactForm</div>
+    <div className="contact-form">ContactForm</div>
   )
 }
 

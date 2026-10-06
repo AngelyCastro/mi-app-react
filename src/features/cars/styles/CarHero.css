@@ -1,0 +1,7 @@
+.car-hero {
+  grid-area: hero;
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #14213d;
+  color: #ffffff;
+}

@@ -1,6 +1,8 @@
+import "../styles/CarPurchaseCard.css"
+
 const CarPurchaseCard = () => {
   return (
-    <div>CarPurchaseCard</div>
+    <div className="car-purchase">CarPurchaseCard</div>
   )
 }
 

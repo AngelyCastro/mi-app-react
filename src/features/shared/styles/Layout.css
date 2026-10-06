@@ -1,0 +1,4 @@
+/* El main crece para empujar el footer hacia abajo */
+.layout__main {
+  flex-grow: 1;
+}

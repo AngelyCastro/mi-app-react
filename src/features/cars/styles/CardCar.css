@@ -1,0 +1,112 @@
+.card-car {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.5s;
+}
+
+.card-car:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* La imagen, la etiqueta y el corazón ocupan la misma celda del grid,
+   así quedan uno encima del otro */
+.card-car__media {
+  display: grid;
+}
+
+.card-car__image,
+.card-car__badge,
+.card-car__fav {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.card-car__image {
+  border-radius: 16px 16px 0 0;
+}
+
+.card-car__badge {
+  justify-self: start;
+  align-self: start;
+  z-index: 1;
+  margin: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  background-color: #14213d;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.card-car__fav {
+  justify-self: end;
+  align-self: start;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  margin: 1rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #e63946;
+  font-size: 1.2rem;
+}
+
+.card-car__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.5rem;
+  padding: 1.25rem;
+}
+
+.card-car__location {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+.card-car__name {
+  font-size: 1.25rem;
+}
+
+.card-car__specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card-car__spec {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  background-color: #f5f6f8;
+  font-size: 0.8rem;
+}
+
+/* Precio a la izquierda y enlace a la derecha */
+.card-car__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.card-car__price {
+  color: #14213d;
+  font-size: 1.1rem;
+}
+
+.card-car__link {
+  color: #d97706;
+  font-weight: 600;
+  transition: color 0.5s;
+}
+
+.card-car__link:hover {
+  color: #14213d;
+}

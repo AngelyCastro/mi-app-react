@@ -1,0 +1,26 @@
+/* Móvil: input y botón uno debajo del otro */
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Campo de búsqueda (para cuando se agregue) */
+.search-bar input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .search-bar {
+    flex-direction: row;
+    align-items: center;
+  }
+}

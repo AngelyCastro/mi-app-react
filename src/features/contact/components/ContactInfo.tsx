@@ -1,7 +1,8 @@
+import "../styles/ContactInfo.css"
 
 const ContactInfo = () => {
   return (
-    <div>ContactInfo</div>
+    <div className="contact-info">ContactInfo</div>
   )
 }
 

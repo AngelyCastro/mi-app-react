@@ -1,0 +1,9 @@
+.car-purchase {
+  grid-area: purchase;
+  align-self: start;
+  padding: 1.5rem;
+  border-top: 4px solid #fca311;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
