@@ -1,8 +1,29 @@
 import "../styles/Pagination.css"
 
-const Pagination = () => {
+type PaginationProps = {
+ currentPage: number;
+ totalPages: number;
+ onPrevious: () => void;
+ onNext: () => void;
+};
+
+const Pagination = ({currentPage, totalPages, onNext, onPrevious}: PaginationProps) => {
   return (
-    <div className="pagination">Pagination</div>
+    <nav className="pagination" aria-label="Paginación del catálogo">
+     <button type="button" onClick={onPrevious} disabled={currentPage <= 1}>
+      <span aria-hidden="true">←</span>
+      Anterior
+     </button>
+ 
+     <span className="pagination__status" aria-live="polite" aria-atomic="true">
+      Página <strong>{currentPage}</strong> de {totalPages}
+     </span>
+ 
+     <button type="button" onClick={onNext} disabled={currentPage >= totalPages}>
+      Siguiente
+      <span aria-hidden="true">→</span>
+     </button>
+   </nav>
   )
 }
 

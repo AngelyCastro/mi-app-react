@@ -1,8 +1,15 @@
+import ContactForm from "../components/ContactForm"
+import ContactInfo from "../components/ContactInfo"
 import "../styles/Contact.css"
 
 const Contact = () => {
   return (
-    <div className="contact">Contact</div>
+    <section className="container contact-page">
+      <ContactInfo />
+      <ContactForm />
+    </section>
+ 
+    
   )
 }
 
